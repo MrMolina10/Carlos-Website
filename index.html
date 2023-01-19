@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Los The Hair Doctor</title>
+  </head>
+  <body>
+    <section id="about-me">
+      <nav>
+        <div class="personal__logo1">Los The Hair Doctor</div>
+        <ul class="nav__link--list">
+          <li>
+            <a
+              href="#surgerys"
+              class="nav__link--anchor link__hover-effect link__hover--effect--black"
+              >Surgeries</a
+            >
+          </li>
+          <li>
+            <a
+              href="#testimonials"
+              class="nav__link--anchor link__hover-effect link__hover--effect--black"
+              >Testimonials</a
+            >
+          </li>
+          <li>
+            <a href="mailto:cmrmetro@aol.com" class="nav__link--anchor nav__link--anchor-primary"
+              >Book Now</a
+            >
+          </li>
+        </ul>
+        <button class="btn__menu" onclick="openMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="menu__backdrop">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                <i class="fas fa-times"></i>
+            </button>
+            <ul class="menu__links">
+                <li class="menu__list">
+                    <a href="#surgerys" class="menu__link" onclick="closeMenu()">Surgeries</a>
+                </li>
+                <li class="menu__list">
+                    <a href="#testimonials" class="menu__link" onclick="closeMenu()">Testimonials</a>
+                </li>
+                <li class="menu__list">
+                    <a href="`mailtocmrmetro@aol.com" class="menu__link no-cursor" onclick="closeMenu()">Book Now</a>
+                </li>
+            </ul>
+        </div> 
+      </nav>
+      <div class="flex flex-1">
+        <div class="about-me__info row">
+          <div class="about-me__info--container">
+            <figure class="about-me__picture--mask">
+              <img
+                src="./Doctor Logo.png"
+                class="about-me__picture"
+                alt="Picture of Doc"
+              />
+            </figure>
+            <h1 class="about-me__info--title">
+              <nobr
+                ><span class="text--red"> Los the Hair Doctor</span>✂️
+              </nobr>
+            </h1>
+            <p class="about-me__info--para">
+              As a traveling barber, I have the opportunity to bring my services
+              to clients in the comfort of their own homes or at a location of
+              their choosing. I have been cutting hair for many years and have
+              honed my skills through continuous education and training. I take
+              pride in my attention to detail and ability to deliver a high
+              quality haircut that meets the individual needs and preferences of
+              each client. I am always striving to improve my craft and am
+              committed to staying up-to-date with the latest trends and
+              techniques in the industry. In addition to providing excellent
+              haircuts, I also prioritize creating a welcoming and relaxed
+              atmosphere for my clients. I believe that this helps to create a
+              positive and enjoyable experience for everyone.
+            </p>
+            <div class="about-me__links">
+              <a href="https://www.facebook.com/profile.php?id=100008970753595" target="_blank" class="about-me__link">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/losthehairdoctor/" target="_blank" class="about-me__link">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.tiktok.com/@losthehairdoctor?lang=en" target="_blank" class="about-me__link">
+                <i class="fab fa-tiktok"></i>
+              </a>
+            </div>
+          </div>
+          <figure class="about-me__img--container">
+            <img src="./About.Me.png" class="about-me__img" alt="" />
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section id="surgerys">
+      <h1 class="surgerys__title">Successful Surgeries</h1>
+      <div class="container">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./Carlito's Cut.png" alt="" />
+            </div>
+            <div class="swiper-slide"><img src="./I Travel.png" alt="" /></div>
+            <div class="swiper-slide">
+              <img src="./Robert's Cut.png" alt="" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials">
+      <div class="testimonials">
+        <div class="inner">
+          <h1>Testimonials</h1>
+          <div class="border"></div>
+          <div class="row">
+            <div class="col">
+              <div class="testimonial">
+                <img src="./Elijah.jpeg" alt="" />
+                <div class="name">@eyefremy</div>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p>
+                  I recently received an excellent haircut by Carlos aka “Los
+                  the Hair Doctor”. From the moment he walked into my house, he
+                  was very professional and attentive. Carlos listened carefully
+                  to my desired style and gave me a cut that exceeded my
+                  expectations. He took the time to style my hair and gave me
+                  tips on how the style will match with me. Once Carlos left, I
+                  felt confident and like a millions bucks, and I will
+                  definitely be returning for future haircuts. Overall, it was
+                  an excellent experience that I highly recommend.
+                </p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="testimonial">
+                <img src="./Roberto.JPG" alt="" />
+                <div class="name">@mr_roberto10</div>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p>
+                  I recently got an excellent buzz cut at my house from the
+                  G.O.A.T Carlos. He listened to my preferences and gave me a
+                  clean, even cut all around. He was very skilled and efficient,
+                  and the process only took a few minutes. I love the low
+                  maintenance and refreshing feel of a buzz cut, and this one
+                  looks great. Carlos provided helpful aftercare advice to keep
+                  my scalp healthy and hydrated. I'm extremely happy with the
+                  results and would highly recommend “Los the Hair Doctor” for
+                  anyone looking for an excellent buzz cut.
+                </p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="testimonial">
+                <img src="./Carlito.jpeg" alt="" />
+                <div class="name">@losdonjefe</div>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p>
+                  I just got a high fade haircut from a traveling barber Carlos,
+                  and I was extremely impressed with the results. He was
+                  professional and on time, for our appointment. The fade itself
+                  was seamless and blended perfectly into the longer hair on
+                  top, and the overall cut was precise and clean. I was very
+                  happy with the final result, and would highly recommend Los
+                  the traveling barber to anyone looking for a high quality
+                  haircut. In addition, the convenience of having a barber come
+                  to my location made the experience even more enjoyable.
+                  Overall, I am extremely satisfied with my high fade cut.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="row footer_row">
+        <a href="#" class="footer_anchor">
+          <figure class="footer_logo">
+            <img src="./Doctor Logo.png" class="personal__logo" alt="" />
+          </figure>
+          <span class="footer_logo--popper">
+            Top
+            <i class="fas fa-arrow-up"></i>
+          </span>
+        </a>
+        <div class="footer_social--list">
+          <a
+            href="#about-me"
+            class="footer_social--link link_hover-effect link_hover-effect--white"
+            >About Me</a
+          >
+          <a
+            href="#testimonials"
+            class="footer_social--link link_hover-effect link_hover-effect--white"
+            >Testimonials</a
+          >
+          <a
+            href="#surgerys"
+            class="footer_social--link link_hover-effect link_hover-effect--white"
+            >Surgeries</a
+          >
+          <a
+            href="mailto:roberto.molina126@gmail.com"
+            class="footer_social--link link_hover-effect link_hover-effect--white"
+            >Book Now</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+    
+    let isModalOpen = false;
+      const swiper = new Swiper(".swiper", {
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+        loop: true,
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+function openMenu() {
+    document.body.classList += " menu--open"
+}
+function closeMenu() {
+    document.body.classList.remove ('menu--open')
+}
+    </script>
+  </body>
+</html>
