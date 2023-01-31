@@ -16,9 +16,15 @@
     <title>Los The Hair Doctor</title>
   </head>
   <body>
-    <section id="about-me">
+    <section class="background" id="about-me">
       <nav>
-        <div class="personal__logo1">Los The Hair Doctor</div>
+        <figure class="about-me__picture--mask">
+          <img
+            src="./TravelingLogoRed.jpeg"
+            class="about-me__picture"
+            alt="Picture of Doc"
+          />
+        </figure>
         <ul class="nav__link--list">
           <li>
             <a
@@ -63,16 +69,9 @@
       <div class="flex flex-1">
         <div class="about-me__info row">
           <div class="about-me__info--container">
-            <figure class="about-me__picture--mask">
-              <img
-                src="./Doctor Logo.png"
-                class="about-me__picture"
-                alt="Picture of Doc"
-              />
-            </figure>
             <h1 class="about-me__info--title">
               <nobr
-                ><span class="text--red"> Los the Hair Doctor</span>✂️
+                ><span class="text--red"> Los the Hair Doctor</span> 🩺
               </nobr>
             </h1>
             <p class="about-me__info--para">
@@ -90,9 +89,6 @@
               positive and enjoyable experience for everyone.
             </p>
             <div class="about-me__links">
-              <a href="https://www.facebook.com/profile.php?id=100008970753595" target="_blank" class="about-me__link">
-                <i class="fab fa-facebook"></i>
-              </a>
               <a href="https://www.instagram.com/losthehairdoctor/" target="_blank" class="about-me__link">
                 <i class="fab fa-instagram"></i>
               </a>
@@ -101,23 +97,49 @@
               </a>
             </div>
           </div>
-          <figure class="about-me__img--container">
-            <img src="./About.Me.png" class="about-me__img" alt="" />
-          </figure>
+          <video loop autoplay muted class="about-me__img--container" width="800" height="640">
+            <source src="./LogoVideo.mov" type="video/mp4" class="about-me__vid" alt="" />
+          </video> 
         </div>
       </div>
     </section>
-    <section id="surgerys">
+    <section class="background" id="surgerys">
       <h1 class="surgerys__title">Successful Surgeries</h1>
       <div class="container">
         <div class="swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="./Carlito's Cut.png" alt="" />
+              <img class="photo__edit" src="./Slideshow1.jpeg" alt="" />
             </div>
-            <div class="swiper-slide"><img src="./I Travel.png" alt="" /></div>
             <div class="swiper-slide">
-              <img src="./Robert's Cut.png" alt="" />
+              <img class="photo__edit" src="./Slide2.jpeg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img class="photo__edit" src="./Robert's Cut.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img class="photo__edit" src="./Slide3.jpeg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img class="photo__edit" src="./Slide4.jpeg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img class="photo__edit" src="./Slide5.jpeg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img class="photo__edit" src="./Slide6.jpeg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img class="photo__edit" src="./Slide7.jpeg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img class="photo__edit" src="./Slide8.jpeg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img class="photo__edit" src="./Slide9.jpeg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img class="photo__edit" src="./Slide10.jpeg" alt="" />
             </div>
           </div>
           <div class="swiper-pagination"></div>
@@ -127,7 +149,7 @@
         </div>
       </div>
     </section>
-    <section id="testimonials">
+    <section class="background" id="testimonials">
       <div class="testimonials">
         <div class="inner">
           <h1>Testimonials</h1>
@@ -144,7 +166,7 @@
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                 </div>
-                <p>
+                <p class="black__text">
                   I recently received an excellent haircut by Carlos aka “Los
                   the Hair Doctor”. From the moment he walked into my house, he
                   was very professional and attentive. Carlos listened carefully
@@ -168,7 +190,7 @@
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                 </div>
-                <p>
+                <p class="black__text">
                   I recently got an excellent buzz cut at my house from the
                   G.O.A.T Carlos. He listened to my preferences and gave me a
                   clean, even cut all around. He was very skilled and efficient,
@@ -192,7 +214,7 @@
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                 </div>
-                <p>
+                <p class="black__text">
                   I just got a high fade haircut from a traveling barber Carlos,
                   and I was extremely impressed with the results. He was
                   professional and on time, for our appointment. The fade itself

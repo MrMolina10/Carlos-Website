@@ -11,8 +11,9 @@ html {
     scroll-behavior: smooth;
   }
 
+
 h1, h2, h3, span{
-    color: #242424;
+    color: whitesmoke;
     text-align: center;
     line-height: 1.25;
 }
@@ -24,6 +25,7 @@ h1{
 p{
     line-height: 1.5;
     font-size: 16px;
+    color: whitesmoke;
 }
 
 .text--red{
@@ -33,7 +35,7 @@ p{
 a{
     text-decoration: none;
     position: relative;
-    color: #fff;
+    color: whitesmoke;
 }
 
 li{
@@ -74,13 +76,13 @@ nav{
 
 .nav__link--anchor{
     margin: 0 12px;
-    color: #242424;
+    color: whitesmoke;
     text-decoration: none;
     font-weight: 700;
 }
 
 .nav__link--anchor-primary{
-    background-color: #242424;
+    background-color: #ce0909;
     padding: 8px 20px;
     border-radius: 50px;
     color: white;
@@ -93,9 +95,13 @@ nav{
 
 .personal__logo1{
     font-size: 24px;
-    color: #242424;
+    color: whitesmoke;
     margin: 0 12px;
     font-weight: 700;
+    width: 90px;
+    height: 81px;
+    overflow: hidden;
+    margin-bottom: 16px;
 }
 
 .btn__menu {
@@ -157,6 +163,10 @@ nav{
     padding: 8px;
     color: white;
   }
+
+  .background{
+    background-color: #222;
+  }
   
 
 /* ABOUT ME */
@@ -165,12 +175,12 @@ nav{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: lightgray;
 }
 
 .about-me__info{
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
 }
 
 .about-me__info--container{
@@ -184,17 +194,22 @@ nav{
 .about-me__picture--mask{
     width: 90px;
     height: 81px;
-    
     overflow: hidden;
-    margin-bottom: 16px;
+}
+
+.logo__name{
+    font-size: 24px;
+    color: rgb(216, 42, 42);
 }
 
 .about-me__picture{
-    width: 100%;
+    width: 90%;
     transform: scale(1.5);
-    padding-top: 13px;
+    padding: 14px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
     margin-bottom: 28px;
+    
+    border-radius: 50%;
 }
 
 .about-me__info--title{
@@ -202,14 +217,18 @@ nav{
 }
 .about-me__info--para{
     font-size: 20px;
-    margin-bottom: 28px;
+    margin-bottom: 30px;
 }
 
 .about-me__link{
-    font-size: 20px;
-    color: #242424;
+    font-size: 30px;
+    color: whitesmoke;
     text-decoration: none;
     padding: 0 16px;
+}
+
+.about-me__links{
+    margin-top: 30px;
 }
 
 .about-me__img--container{
@@ -218,7 +237,7 @@ nav{
     align-items: center;
 }
 
-.about-me__img{
+.about-me__vid{
     margin-top: 22px;
     margin-bottom: 18px;
     width: 60%;
@@ -238,6 +257,11 @@ nav{
     justify-content: center;
     margin-top: 40px;
     
+}
+
+.photo__edit{
+    width: 500px;
+    height: 500px;
 }
 
 .container{
@@ -280,7 +304,7 @@ nav{
 
 .testimonials{
     padding: 40px 0;
-    background: #f1f1f1;
+    background: #222;
     color: #434343;
     text-align: center;
 }
@@ -334,6 +358,10 @@ nav{
     margin-bottom: 20px;
 }
 
+.black__text{
+    color: #222;
+}
+
 
 
 footer{
@@ -379,11 +407,30 @@ footer{
 }
 
 
-@media screen and (max-width:960px){
+@media screen and (max-width:390px){
+    .about-me__picture--mask{
+        margin-left: 12px;
+    }
+    .about-me__picture{
+        margin-bottom: 0;
+        margin-top: 12px;
+        height: 70px;
+        width: 80px;
+    }
     .col{
         flex: 100%;
         max-width: 80%;
     }
+    .about-me__info.row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .swiper-slide img{
+        width: 80%;
+    }
+   
 }
 
 @media (max-width:768px){
@@ -407,7 +454,7 @@ footer{
     }
 }
 
-@media screen and (max-width:600px){
+@media only screen and (min-width:600px){
     .col{
         flex: 100%;
         max-width: 100%;
@@ -422,11 +469,15 @@ footer{
         font-size: 16px;
         padding: 0 16px;
     }
+    .about-me__img--container{
+        display: flex;
+    }
 }
 
 @media (max-width:585px){
     .btn__menu {
         display: block;
+        color: white;
       }
     
       .nav__link--list {
@@ -448,51 +499,3 @@ footer{
 }
 
 
-@Keyframes animate-profile-picture{
-    0%{
-        transform: scale(1.1);
-    }
-    80%{
-        transform: scale(1.1);
-    }
-    100%{
-        transform: scale(1);
-    }
-}
-
-
-@Keyframes fade-up{
-    0%{
-        opacity: 0;
-        transform: translateY(40px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-
-}
-@Keyframes fade-in{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-.wave{
-    display: inline-block;
-    animation: animate-wave 500ms infinite ease-in-out;
-}
-@Keyframes animate-wave{
-    0%{
-        transform: rotate(0);
-    }
-    50%{
-        transform: rotate(30 deg);
-    }
-    100%{
-        transform: rotate(0);
-    }
-}
