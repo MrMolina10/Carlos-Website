@@ -9,13 +9,9 @@
 
 html {
     scroll-behavior: smooth;
-    height: -webkit-fill-available;
     touch-action: pan-y;
 }
 
-body{
-    height: -webkit-fill-available;
-}
 
 h1, h2, h3, span{
     color: whitesmoke;
