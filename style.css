@@ -430,6 +430,10 @@ footer{
     .swiper-slide img{
         width: 80%;
     }
+    .about-me__img--container{
+        width: 390px;
+        height: 640px;
+    }
    
 }
 @media screen and (max-width:420px){
@@ -455,7 +459,10 @@ footer{
     .swiper-slide img{
         width: 80%;
     }
-   
+    .about-me__img--container{
+        width: 420px;
+        height: 640px;
+    }
 }
 @media screen and (max-width:548px){
     .about-me__picture--mask{
@@ -480,7 +487,10 @@ footer{
     .swiper-slide img{
         width: 80%;
     }
-   
+    .about-me__img--container{
+        width: 548px;
+        height: 640px;
+    }
 }
 
 @media (max-width:768px){
@@ -537,6 +547,10 @@ footer{
     .swiper-slide img{
         width: 80%;
     }
+    .about-me__img--container{
+        width: 480px;
+        height: 640px;
+    }
 }
 
 @media (max-width:585px){
@@ -551,6 +565,10 @@ footer{
       .about-me-info--para{
         font-size: 16px;
       }
+      .about-me__img--container{
+        width: 585px;
+        height: 640px;
+    }
 }
 
 @media (max-width: 550px) {
