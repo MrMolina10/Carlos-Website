@@ -457,6 +457,31 @@ footer{
     }
    
 }
+@media screen and (max-width:548px){
+    .about-me__picture--mask{
+        margin-left: 12px;
+    }
+    .about-me__picture{
+        margin-bottom: 0;
+        margin-top: 12px;
+        height: 70px;
+        width: 80px;
+    }
+    .col{
+        flex: 100%;
+        max-width: 80%;
+    }
+    .about-me__info.row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .swiper-slide img{
+        width: 80%;
+    }
+   
+}
 
 @media (max-width:768px){
     nav{
